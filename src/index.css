@@ -5,11 +5,11 @@
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 500ms;
-  --default-cell-bg-color: theme('colors.slate.400');
+  --default-cell-bg-color: theme('colors.indigo.400');
 }
 
 .dark {
-  --default-cell-bg-color: theme('colors.slate.700');
+  --default-cell-bg-color: theme('colors.indigo.800');
 }
 
 .cell-fill-animation {
