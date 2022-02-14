@@ -12,7 +12,7 @@ import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
 import {
-  GAME_TITLE,
+  // GAME_TITLE,
   WIN_MESSAGES,
   GAME_COPIED_MESSAGE,
   ABOUT_GAME_MESSAGE,
