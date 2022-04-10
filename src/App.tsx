@@ -211,9 +211,11 @@ function App() {
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div className="flex w-80 mx-auto items-center mb-8 mt-20">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
-          <img src={llamadle} alt="Llamadle" className="w-40" />
-          {/* {GAME_TITLE} */}
+          <div className="px-4 bg-white rounded text-center">
+            <img src={llamadle} alt="Llamadle" className="w-40" />
+          </div>
         </h1>
+        <div className="pr-1"></div>
 
         <InformationCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
