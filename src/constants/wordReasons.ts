@@ -22,7 +22,8 @@ export const REASONS: { [key: string]: any } = {
   brain: "We're talking big brain energy",
   space: 'From song lyrics for Make It Better',
   stars: 'From song lyrics for Paradise',
-  grass: "Part of llama's favorite boba drink: grass jelly",
+  grass:
+    "Part of llama's favorite boba drink: honey lemon tea with boba and grass jelly",
   sings: 'What llamas do',
   think: 'From song lyrics for Other People',
   swear: 'What llama does on stream...quite a bit',
@@ -47,7 +48,8 @@ export const REASONS: { [key: string]: any } = {
   throw: 'From song lyrics for Paradise',
   funny: 'Llama is funny',
   cross: 'From song lyrics for Borders',
-  lemon: "Part of llama's favorite boba drink",
+  lemon:
+    "Part of llama's favorite boba drink: honey lemon tea with boba and grass jelly",
   sugar: 'From song lyrics for Paradise',
   shoes: 'Llama has some sweet kicks',
   sweet: 'From song lyrics for Other People',
@@ -71,7 +73,8 @@ export const REASONS: { [key: string]: any } = {
   owata:
     "Llama's answer for Dive Studios Hwaiting pop quiz. Her version of Ottawa.",
   taste: 'From song lyrics for Stay Calm',
-  jelly: "Part of llama's favorite boba drink: grass jelly",
+  jelly:
+    "Part of llama's favorite boba drink: honey lemon tea with boba and grass jelly",
   heals: 'From song lyrics for Lifeline',
   skate: "One of llama's favorite hobbies: skateboarding",
   awake: 'From song lyrics for On My Own',
