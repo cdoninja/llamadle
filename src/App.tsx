@@ -39,7 +39,7 @@ import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
 } from './lib/localStorage'
-import llamadle from './images/llamadle.jpg'
+import llamadle from './images/llamadle-sm.jpg'
 import './App.css'
 
 function App() {
