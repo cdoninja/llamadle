@@ -67,19 +67,17 @@ export const Alert = ({
       <div className={classes}>
         <div className="p-4 text-center">
           <p className="font-black text-3xl pb-2">{message}</p>
+          {winImg && (
+            <img
+              src={winImg}
+              className="shadow rounded-full max-w-full h-auto align-middle border border-2 border-white m-auto"
+              alt="Jack Jack"
+            />
+          )}
           {reason && winImg && (
-            <div>
-              <div className="px-4 rounded">
-                <img
-                  src={winImg}
-                  className="object-center rounded"
-                  alt="Jack Jack"
-                />
-              </div>
-              <div className="mt-8 p-4 bg-violet-100 rounded-lg text-left">
-                <p className="font-bold text-black text-xl">Why {solution}?</p>
-                <p className="text-black">{reason}</p>
-              </div>
+            <div className="mt-8 p-4 bg-violet-100 rounded-lg text-left">
+              <p className="font-bold text-black text-xl">Why {solution}?</p>
+              <p className="text-black">{reason}</p>
             </div>
           )}
         </div>
