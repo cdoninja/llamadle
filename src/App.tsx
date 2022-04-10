@@ -31,6 +31,7 @@ import {
   isWordInWordList,
   isWinningWord,
   solution,
+  reason,
   findFirstUnusedReveal,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
@@ -255,6 +256,8 @@ function App() {
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
         isHardMode={isHardMode}
+        reason={reason}
+        solution={solution}
       />
       <AboutModal
         isOpen={isAboutModalOpen}
@@ -292,6 +295,8 @@ function App() {
         isOpen={successAlert !== ''}
         variant="success"
         topMost={true}
+        reason={reason}
+        solution={solution}
       />
     </div>
   )

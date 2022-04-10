@@ -1,4 +1,5 @@
 import { WORDS } from '../constants/wordlist'
+import { REASONS } from '../constants/wordReasons'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { getGuessStatuses } from './statuses'
 
@@ -48,11 +49,15 @@ export const getWordOfDay = () => {
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
 
+  let solution = WORDS[index % WORDS.length]
+  let reason = solution in REASONS ? REASONS[solution] : ''
+
   return {
-    solution: WORDS[index % WORDS.length].toUpperCase(),
+    solution: solution.toUpperCase(),
     solutionIndex: index,
     tomorrow: nextday,
+    reason,
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex, tomorrow, reason } = getWordOfDay()
