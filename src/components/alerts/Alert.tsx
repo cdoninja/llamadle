@@ -1,7 +1,11 @@
 import { Fragment } from 'react'
 import { Transition } from '@headlessui/react'
 import classNames from 'classnames'
-// import llamadle from '../../images/llamadle.jpg'
+import jjPikachu from '../../images/jj-pikachu.png'
+import jjChair from '../../images/jj-chair.png'
+import jjLick from '../../images/jj-lick.png'
+import jjGameboy from '../../images/jj-gameboy.png'
+import jjPineapple from '../../images/jj-pineapple.jpg'
 
 type Props = {
   isOpen: boolean
@@ -29,6 +33,26 @@ export const Alert = ({
     topMost ? 'z-20' : ''
   )
 
+  let winImg = ''
+  switch (message) {
+    case 'PAWG! You win!':
+      winImg = jjChair
+      break
+    case 'JackJack kisses for you!':
+      winImg = jjLick
+      break
+    case 'Your dog speaks Chinese?! Genius.':
+      winImg = jjPineapple
+      break
+    case 'First try! Just like Kirby':
+      winImg = jjGameboy
+      break
+    case 'WWD!':
+      winImg = jjPikachu
+      break
+    default:
+  }
+
   return (
     <Transition
       show={isOpen}
@@ -42,12 +66,20 @@ export const Alert = ({
     >
       <div className={classes}>
         <div className="p-4 text-center">
-          {/* <img src={llamadle} alt="Llamadle" /> */}
-          <p className="font-black text-xl">{message}</p>
-          {reason && (
-            <div className="mt-8 p-4 bg-violet-100 rounded-lg text-left">
-              <p className="font-bold text-black text-xl">Why {solution}?</p>
-              <p className="text-black">{reason}</p>
+          <p className="font-black text-3xl pb-2">{message}</p>
+          {reason && winImg && (
+            <div>
+              <div className="px-4 rounded">
+                <img
+                  src={winImg}
+                  className="object-center rounded"
+                  alt="Jack Jack"
+                />
+              </div>
+              <div className="mt-8 p-4 bg-violet-100 rounded-lg text-left">
+                <p className="font-bold text-black text-xl">Why {solution}?</p>
+                <p className="text-black">{reason}</p>
+              </div>
             </div>
           )}
         </div>
