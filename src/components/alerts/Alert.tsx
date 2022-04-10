@@ -71,6 +71,7 @@ export const Alert = ({
             <img
               src={winImg}
               className="shadow rounded-full max-w-full h-auto align-middle border border-2 border-white m-auto"
+              style={{ height: '250px', width: '250px' }}
               alt="Jack Jack"
             />
           )}
